@@ -1,0 +1,9 @@
+2017-12-01 18:59:11 ERROR ReceiverTracker:70 - Deregistered receiver for stream 0: Restarting receiver with delay 2000ms: Error receiving tweets - java.util.concurrent.RejectedExecutionException: Task twitter4j.StatusStreamBase$1@5621fce rejected from java.util.concurrent.ThreadPoolExecutor@195f681e[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 10773]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1369)
+	at twitter4j.DispatcherImpl.invokeLater(DispatcherImpl.java:58)
+	at twitter4j.StatusStreamBase.handleNextElement(StatusStreamBase.java:80)
+	at twitter4j.StatusStreamImpl.next(StatusStreamImpl.java:56)
+	at twitter4j.TwitterStreamImpl$TwitterStreamConsumer.run(TwitterStreamImpl.java:568)
+
