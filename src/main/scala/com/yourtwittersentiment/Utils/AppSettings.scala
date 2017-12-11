@@ -12,8 +12,6 @@ object AppSettings {
   val twitterConsumer = config.getString("TWITTER_CONSUMER_KEY")
   val twitterConsumerSecret = config.getString("TWITTER_CONSUMER_SECRET")
 
-  //val runService = config.getBoolean("RUN_AS_SERVICE")
-
   val twitterStreamInterval = config.getInt("TWITTER_INTERVAL")
 
   val kafkaUserTopic = config.getString("kafkaSink.topic.user")
