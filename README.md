@@ -12,26 +12,31 @@ and many other use cases.
 ## Sentiment Analysis
 Each tag is classified as either Positive, Neutral or Negative based on its tweet text. The Stanford Core_NLP library is used for classifying each tweet.
 
-Drawback: The accuracy with core_nlp is not great. Often mis classified some obivous tweets.
+**Drawback**: The accuracy with core_nlp is not great. Often mis classified some obivous tweets.
 
-Comingup: Incorporating Logistic Regression, Naive Bayes, LDA and make them configurable through UI.
+**Comingup**: Incorporating Logistic Regression, Naive Bayes, LDA and make them configurable through UI.
 
 ## Demo
 
 #### Sentiment by user
 
 ![TweetsMap](YourTwitterSentiment_UI/static/gifs/markers1.gif)
- 
+
+ * Tweets showing the user and his negative sentiment tweet.
+
 ![TweetsMap](YourTwitterSentiment_UI/static/gifs/markers2.gif)
 
-* Tweets showing the user and its tweet.
+* Tweets showing the user and his positive sentiment tweet
 
 #### Sentiment by tag
 
 ![Filtering](YourTwitterSentiment_UI/static/gifs/filter1.gif)
-![Filtering](YourTwitterSentiment_UI/static/gifs/filter3.gif)
 
 * Filtering by tag gives your desired tweets on the map.
+
+![Filtering](YourTwitterSentiment_UI/static/gifs/filter3.gif)
+
+* Filtering tweets with 'news' tags.
 
 ## Built With
 * Apache Spark
