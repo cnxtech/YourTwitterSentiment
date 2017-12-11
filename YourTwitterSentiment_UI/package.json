@@ -1,0 +1,56 @@
+{
+  "name": "routed-react",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "mz": "^2.4.0",
+    "react-scripts": "0.2.1",
+    "supertest-as-promised": "^4.0.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "cors": "^2.8.4",
+    "express": "^4.14.0",
+    "google-map-react": "^0.25.0",
+    "google-maps-react": "^1.1.2",
+    "html-hint": "^0.2.4",
+    "kafka-node": "^2.3.0",
+    "lodash": "^4.17.4",
+    "morgan": "^1.7.0",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
+    "prop-types": "^15.6.0",
+    "react": "^0.14.8",
+    "react-d3-map": "^0.8.3",
+    "react-dom": "^0.14.8",
+    "react-redux": "^4.3.0",
+    "react-router": "^2.6.1",
+    "react-tagcloud": "^1.2.0",
+    "redux": "^3.0.4",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4",
+    "topojson": "^3.0.2"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "start:server": "node server",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "eject": "react-scripts eject",
+    "test": "mocha test"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/config/eslint.js",
+    "env": {
+      "mocha": true
+    },
+    "rules": {
+      "strict": 0
+    }
+  }
+}
