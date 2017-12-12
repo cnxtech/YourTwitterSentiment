@@ -49,6 +49,8 @@ Each tag is classified as either Positive, Neutral or Negative based on its twee
 * Node Kafka
 
 
-
+## Coming Up
+* Incorporate choice of user to select classifying algorithm - Logistic Regression, Naive Bayes.
+* Incorporate user's choice to narrow down analysis to a specific topic. Ex: Particular brand.
 
 
