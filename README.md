@@ -10,11 +10,8 @@ This project can be used as a base for various applications like,
 and many other use cases.
 
 ## Sentiment Analysis
-Each tag is classified as either Positive, Neutral or Negative based on its tweet text. The Stanford Core_NLP library is used for classifying each tweet.
+Each tag is classified as either Positive, Neutral or Negative based on its tweet text. Any model among Naive Bayes, Random Forest and Multilayer perceptron can be used to classify tweets. (Change the desired alog in Application.conf) 
 
-**Drawback**: The accuracy with core_nlp is not great. Often mis classified some obivous tweets.
-
-**Comingup**: Incorporating Logistic Regression, Naive Bayes, LDA and make them configurable through UI.
 
 ## Demo
 
@@ -50,7 +47,6 @@ Each tag is classified as either Positive, Neutral or Negative based on its twee
 
 
 ## Coming Up
-* Incorporate choice of user to select classifying algorithm - Logistic Regression, Naive Bayes.
 * Incorporate user's choice to narrow down analysis to a specific topic. Ex: Particular brand.
 
 
