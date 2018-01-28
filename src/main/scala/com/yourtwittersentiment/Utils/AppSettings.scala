@@ -1,5 +1,6 @@
 package com.yourtwittersentiment.Utils
 import com.typesafe.config.{Config, ConfigFactory}
+import com.yourtwittersentiment.Model.Classifier
 
 /**
   * Created by siddartha on 11/29/17.
@@ -24,5 +25,8 @@ object AppSettings {
   val kafkaBackoff = config.getString("kafkaSink.retry.backoff.ms")
 
 
+  val trainingDataSet = config.getString("training_data")
+  val testDataSet = config.getString("test_data")
 
+  val classifierType = Classifier.toClassifier(config.getString("classifier_type"))
 }

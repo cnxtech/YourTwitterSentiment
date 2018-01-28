@@ -28,9 +28,9 @@ libraryDependencies ++= Seq(
   "org.twitter4j"         %         "twitter4j-core"            % "4.0.6",
   "com.google.code.gson"  %         "gson"                      % "2.8.2" withSources(),
   "com.typesafe"          %         "config"                    % configVersion,
-  "edu.stanford.nlp"      %         "stanford-corenlp"          % coreNLPVersion,
+  "edu.stanford.nlp"      %         "stanford-corenlp"          % coreNLPVersion, //Provided excludeAll ExclusionRule("org.slf4j"),
   "edu.stanford.nlp"      %         "stanford-corenlp"          % coreNLPVersion classifier "models",
-
+  "com.johnsnowlabs.nlp" %%         "spark-nlp"                 % "1.2.4",
   "com.github.scopt"      %%        "scopt"                     % "3.5.0",
   "com.fasterxml.jackson.core" %    "jackson-databind"          % jacksonVersion
 )
