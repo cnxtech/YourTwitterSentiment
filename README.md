@@ -1,16 +1,17 @@
 # YourTwitterSentiment
-A pet project to analyze live twitter stream for the tweets sentiment and top 20 hashtags with their sentiment.
-Tweets in the last 30 seconds (configuarable) are visualized on the world map with their associated sentiment and popular hashtags are visualized as a tag-cloud each tag size representing number of tweets that included the tag and its color representing the average sentiment. Tweets on map can be filtered for a specific tag from the cloud.
+A pet project to analyze live twitter stream for the tweets-sentiment and top 20 hashtags with their sentiment.
+Tweets in the last 30 seconds (configuarable) are visualized on the world map with their associated sentiment and popular hashtags are visualized as a tag-cloud. Each tag size represents number of tweets that included the tag and its color represent the average sentiment - Red for Negative, Blue for neutral and green for positive. Tweets on map can be filtered for a specific tag from the cloud.
 
 ## Applications
-This project can be used as a base for various applications like,
+This project can be used as a base for various applications:
 * Monitoring customer comments of a particular brand/service,
 * Clustering different types of customers based on location, 
-* General purpose usage to identify what's hot right now!
+* General purpose usage to identify "what's hot right now!"
 and many other use cases.
 
 ## Sentiment Analysis
-Each tag is classified as either Positive, Neutral or Negative based on its tweet text. Any model among Naive Bayes, Random Forest and Multilayer perceptron can be used to classify tweets. (Change the desired alog in Application.conf) 
+Each tweet is classified as either Positive, Neutral or Negative based on its text and tag is calssified based on the average sentiment in the last 30 seconds.
+Any model among Naive Bayes, Random Forest and Multilayer perceptron can be used to classify tweets. (Change to desired model in Application.conf) 
 
 
 ## Demo
@@ -37,6 +38,7 @@ Each tag is classified as either Positive, Neutral or Negative based on its twee
 
 ## Built With
 * Apache Spark
+* Spark ML
 * Apache Kafka
 * Stanford Core NLP library
 * React
